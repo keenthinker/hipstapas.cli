@@ -30,6 +30,11 @@ Verbs and options:
 * help
 * version
 
+Build:
+* Download the source code and extract it
+* Build the project with `dotnet build`
+* Start using it, e.g. `dotnet run password` or `dotnet run wordlist --resultscount 1`
+* Alternative usage: navigate to the bin directory and call the executable `hipstapas.cli password` or `hipstapas.cli wordlist --resultcount 1`  
 
 Dependencies: 
 * [.NET Core 3.1](https://dotnet.microsoft.com/)
