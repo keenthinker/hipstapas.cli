@@ -44,4 +44,8 @@ Build:
 
 Dependencies: 
 * [.NET Core 3.1](https://dotnet.microsoft.com/)
+<<<<<<< HEAD
 * [Command Line Parser Library](https://github.com/commandlineparser/commandline)
+=======
+* [Command Line Parser Library](https://github.com/commandlineparser/commandline)
+>>>>>>> 9156ab1cb381e95506928ec49c39125b0a26ede5
