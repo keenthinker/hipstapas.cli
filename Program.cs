@@ -14,10 +14,11 @@ namespace hipstapas.cli
         // dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=true
         static void Main(string[] args)
         {
-            Parser.Default.ParseArguments<CliOptionsPassword, CliOptionsUuid, CliOptionsWordlist>(args)
+            Parser.Default.ParseArguments<CliOptionsPassword, CliOptionsUuid, CliOptionsWordlist, CliOptionsRandom>(args)
             .WithParsed<CliOptionsPassword>(passwordOptions => passwordOptions.GeneratePassword().WriteToConsole())
             .WithParsed<CliOptionsUuid>(uuidOptions => uuidOptions.GenerateUuid().WriteToConsole())
             .WithParsed<CliOptionsWordlist>(wordlistOptions => wordlistOptions.GenerateWordlist().WriteToConsole())
+            .WithParsed<CliOptionsRandom>(randomOptions => randomOptions.GenerateRandomNumber().WriteToConsole())
             .WithNotParsed(errors => handleErrors(errors));
         }
 

@@ -20,6 +20,11 @@ public static class HipstapasApi
         return callApi("wordlist", options);
     }
 
+    public static string GenerateRandomNumber(this CliOptionsRandom options)
+    {
+        return callApi("random", options);
+    }
+
     private static string callApi<T>(string endpointName, T options)
     {
         return endpointUrl(endpointName)

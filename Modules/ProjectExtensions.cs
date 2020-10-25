@@ -46,6 +46,11 @@ public static class ProjectExtensions
                 ifVerboseIsOn = optionsWordlist.Verbose;
 				break;
 
+			case CliOptionsRandom optionsRandom:
+				query = $"?min={optionsRandom.Min}&max={optionsRandom.Max}&noDuplicates={optionsRandom.NoDuplicates}&sort={optionsRandom.Sort}&resultsCount={optionsRandom.ResultsCount}";
+				ifVerboseIsOn = optionsRandom.Verbose;
+				break;
+
             default:
                 throw new InvalidCastException($"Not supported type {options.GetType().Name}");
         }
