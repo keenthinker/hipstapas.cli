@@ -1,5 +1,7 @@
 # hipstapas.cli
-Hipster Password Helper As A Service Command Line Interface
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/keenthinker/hipstapas.cli?sort=semver) ![Github License](https://img.shields.io/badge/license-MIT-blue)
+
+Hipster Password Helper As A Service Command Line Interface 
 
 This is a companion app for the <a href="https://hipstapas.dev">hipstapas.dev</a> service. It allows the use of the service directly from the terminal. 
 
@@ -35,6 +37,7 @@ Verbs and options:
     * resultscount (int, default: 5)
 * help
 * version
+* verbose
 
 Build:
 * Download the source code and extract it
